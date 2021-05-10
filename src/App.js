@@ -1,4 +1,3 @@
-import './App.css';
 import GlobalStyle from './styles/globals';
 import Intro from './components/Intro';
 

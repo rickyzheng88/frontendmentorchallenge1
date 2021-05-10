@@ -4,6 +4,8 @@ import { Container } from '../generics/Container';
 import backgroundImg from '../../images/bg-pattern-intro.svg';
 import Header from '../Header';
 import Title from './Title';
+import Subtitle from './Subtitle';
+import Button from '../generics/Button';
 
 const Background = styled.section`   
     content: "";
@@ -32,12 +34,25 @@ const CenteredContainer = styled(Container)`
     position: relative;
 `;
 
+const ButtonWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15.9375rem;
+    margin: 0 auto;
+`;
+
 const Intro = () => {
     return (
         <Background>
             <CenteredContainer paddingTop='60px'>
                 <Header/>
                 <Title>A modern publishing platform</Title>
+                <Subtitle>Grow your audience and build your online brand</Subtitle>
+                <ButtonWrapper>
+                    <Button padding='13px 20px'>Start for Free</Button>
+                    <Button padding='13px 20px' transparent>Learn More</Button>
+                </ButtonWrapper>
             </CenteredContainer>
         </Background>
     );
