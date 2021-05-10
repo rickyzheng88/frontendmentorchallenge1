@@ -38,7 +38,7 @@ const ButtonWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 15.9375rem;
+    width: 16.875rem;
     margin: 0 auto;
 `;
 

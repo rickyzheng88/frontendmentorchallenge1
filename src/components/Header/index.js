@@ -31,9 +31,31 @@ const Header = () => {
             <Nav>
                 <Logo>Blogr</Logo>
                 <ListNavItem>
-                    <NavItem>Product</NavItem>
-                    <NavItem>Company</NavItem>
-                    <NavItem>Connect</NavItem>
+                    <NavItem
+                    items={[
+                        {title: 'New'},
+                        {title: 'Hot Sales'},
+                        {title: 'Good prices'}
+                    ]}
+                    >
+                        Product
+                    </NavItem>
+                    <NavItem
+                    items={[
+                        {title: 'About Us'}
+                    ]}
+                    >
+                        Company
+                    </NavItem>
+                    <NavItem
+                    items={[
+                        {title: 'Contact'},
+                        {title: 'Newsletter'},
+                        {title: 'LinkedIn'}
+                    ]}
+                    >
+                        Connect
+                    </NavItem>
                 </ListNavItem>
             </Nav>
             <ButtonGroup>

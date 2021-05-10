@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 import arrow from '../../images/icon-arrow-light.svg';
 import { ubuntu } from '../../styles/variables';
+import Menu from './Menu';
 
 const Item = styled.span`
     font-family: ${ubuntu};
@@ -17,19 +18,7 @@ const Icon = styled.img`
     margin-left: 7px;
 `;
 
-const Menu = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    position: absolute;
-    width: 80px;
-    height: 100px;
-    border-radius: 5px;
-`;
-
-const NavItem = ({ children }) => {
+const NavItem = ({ children, items }) => {
     const [active, setActive] = useState(false);
 
     const toggleMenu = () => {
@@ -41,7 +30,7 @@ const NavItem = ({ children }) => {
             <Item onMouseEnter={toggleMenu} onMouseLeave={toggleMenu}>
                 { children }
                 <Icon src={arrow} />
-                <Menu></Menu>
+                <Menu items={items}></Menu>
             </Item>
         );
     }
