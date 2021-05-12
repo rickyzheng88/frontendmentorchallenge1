@@ -18,13 +18,10 @@ const Parraph = styled.p`
     padding-bottom: ${props => props.paddingBottom || '0'};
 `;
 
-const TextContent = ({ children, title, paddingBottom }) => {
-    return (
-        <TextContentWrapper>
-            <Title>{title}</Title>
-            <Parraph paddingBottom={paddingBottom}>{children}</Parraph>
-        </TextContentWrapper>
-    );
+const TextContent =  {
+    Wrapper: TextContentWrapper,
+    Title,
+    Parraph
 };
 
 export default TextContent;
