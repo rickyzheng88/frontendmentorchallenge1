@@ -1,6 +1,7 @@
 import GlobalStyle from './styles/globals';
 import Intro from './components/Intro';
 import FirstContent from './components/FirstContent';
+import SecondContent from './components/SecondContent';
 
 function App() {
   return ( 
@@ -8,6 +9,7 @@ function App() {
     <GlobalStyle/>
     <Intro/>
     <FirstContent/>
+    <SecondContent/>
     </>
   );
 }
