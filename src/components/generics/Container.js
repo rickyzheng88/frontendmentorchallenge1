@@ -9,11 +9,4 @@ const Container = styled.div`
     
 `;
 
-const ContainerPaddingTop = styled(Container)`
-    padding-top: ${(props) => props.paddingTop || '60px'};
-`;
-
-export {
-    Container,
-    ContainerPaddingTop
-};
+export default Container;

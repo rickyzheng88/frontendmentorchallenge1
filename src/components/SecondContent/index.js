@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import image from '../../images/bg-pattern-circles.svg';
 import phoneImage from '../../images/illustration-phones.svg';
-import { Container } from '../generics/Container';
+import Container from '../generics/Container';
 import TextContent from '../generics/TextContent';
 
 const Background = styled.div`

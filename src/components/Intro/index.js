@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../generics/Container';
+import Container from '../generics/Container';
 import backgroundImg from '../../images/bg-pattern-intro.svg';
 import Header from '../Header';
 import Title from './Title';

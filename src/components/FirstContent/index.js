@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../generics/Container';
+import Container from '../generics/Container';
 import { veryDarkBlue } from '../../styles/variables';
 import Title from './Title';
 import backgroundImg from '../../images/illustration-editor-desktop.svg';
