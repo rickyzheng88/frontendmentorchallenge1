@@ -5,6 +5,7 @@ import { veryDarkBlue } from '../../styles/variables';
 import Title from './Title';
 import backgroundImg from '../../images/illustration-editor-desktop.svg';
 import TextContent from '../generics/TextContent';
+import ContentWrapper from '../generics/ContentWrapper';
 
 const Background = styled.div`
     color: ${veryDarkBlue};
@@ -16,20 +17,13 @@ const Background = styled.div`
     background-position: 150% 3.75rem;
 `;
 
-const ContentWrapper = styled.div`
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 510px;
-`;
-
 const FirstContent = () => {
     return (
         <Background>
             <Container paddingX='8.4375rem'>
                 <Title>Designed for the future</Title>
-                <ContentWrapper>
-                    <TextContent.Wrapper>
+                <ContentWrapper alignItems='flex-start'>
+                    <TextContent.Wrapper width='510px'>
                         <TextContent.Title>Introducing an extensible editor</TextContent.Title>
                         <TextContent.Parraph paddingBottom='4.0625rem'>
                             Blog features an exceedingly intuitive interface which lets you focus
@@ -40,7 +34,7 @@ const FirstContent = () => {
                         </TextContent.Parraph>                        
                     </TextContent.Wrapper>
 
-                    <TextContent.Wrapper>
+                    <TextContent.Wrapper width='510px'>
                         <TextContent.Title>Robust content management</TextContent.Title>
                         <TextContent.Parraph paddingBottom='4.0625rem'>
                             Flexible content management enables users to easily move through

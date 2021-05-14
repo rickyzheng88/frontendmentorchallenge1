@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Container from '../generics/Container';
 import TextContent from '../generics/TextContent';
+import ContentWrapper from '../generics/ContentWrapper';
 import backgroundImg from '../../images/illustration-laptop-desktop.svg';
 
 const Background = styled.div`
@@ -11,18 +12,11 @@ const Background = styled.div`
     background-size: 57.5rem;
 `;
 
-const ContentWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-`;
-
 const ThirdContent = () => {
     return (
         <Background>
             <Container paddingX='290px'>
-                <ContentWrapper>
+                <ContentWrapper alignItems='flex-end'>
                     <TextContent.Wrapper width='500px'>
                         <TextContent.Title>Free, open, Simple</TextContent.Title>
                         <TextContent.Parraph paddingBottom='65px'>
