@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Logo from './Logo';
+import Logo from '../generics/Logo';
 import Nav from './Nav';
 import NavItem from './NavItem';
 import Button from '../generics/Button';

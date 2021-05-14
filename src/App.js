@@ -3,6 +3,7 @@ import Intro from './components/Intro';
 import FirstContent from './components/FirstContent';
 import SecondContent from './components/SecondContent';
 import ThirdContent from './components/ThirdContent';
+import Footer from './components/Footer';
 
 function App() {
   return ( 
@@ -12,6 +13,7 @@ function App() {
     <FirstContent/>
     <SecondContent/>
     <ThirdContent/>
+    <Footer/>
     </>
   );
 }
